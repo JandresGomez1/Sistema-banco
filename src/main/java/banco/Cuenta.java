@@ -9,7 +9,7 @@ public class Cuenta {
     }
 
     public void depositar(int monto){
-        if (monto<0){
+        if (monto<0 || monto>2000000){
             System.out.println("Ingrese un valor correcto".toUpperCase());
         }else {
             this.saldo = monto+saldo;
@@ -21,7 +21,7 @@ public class Cuenta {
         if(monto>saldo){
             System.out.println("saldo insuficiente.".toUpperCase());
         }else{
-            this.saldo = monto-saldo;
+            this.saldo = saldo-monto;
             System.out.println("Retiro exitoso".toUpperCase());
         }
     }
