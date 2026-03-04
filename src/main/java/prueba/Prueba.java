@@ -13,7 +13,6 @@ public class Prueba {
         int opcion=0;
 
         Cuenta cuenta = null;
-        Cuenta cuenta1
 
         System.out.println("Bienvenidos al banco el Ahorrador".toUpperCase());
         System.out.println("1. crear cuenta sin saldo inicial".toUpperCase());
@@ -27,7 +26,7 @@ public class Prueba {
             cuenta = new Cuenta(0);
         } else if (opcion == 2) {
             System.out.print("Ingrese monto incial:".toUpperCase());
-            int monto = sc.nextInt();
+            double monto = sc.nextInt();
             cuenta = new Cuenta(monto);
         } else {
             System.exit(0);
@@ -45,7 +44,7 @@ public class Prueba {
 
             op = sc.nextInt();
 
-            int monto;
+            double monto;
 
             switch (op){
                 case 1:

@@ -2,13 +2,13 @@ package banco;
 
 public class Cuenta {
 
-    private int saldo;
+    private double saldo;
 
-    public Cuenta(int saldo) {
+    public Cuenta(double saldo) {
         this.saldo = saldo;
     }
 
-    public void depositar(int monto){
+    public void depositar(double monto){
         if (monto<0 || monto>2000000){
             System.out.println("Ingrese un valor correcto".toUpperCase());
         }else {
@@ -17,7 +17,7 @@ public class Cuenta {
         }
     }
 
-    public void retirar(int monto){
+    public void retirar(double monto){
         if(monto>saldo){
             System.out.println("saldo insuficiente.".toUpperCase());
         }else{
@@ -26,11 +26,11 @@ public class Cuenta {
         }
     }
 
-    public int getSaldo() {
+    public double getSaldo() {
         return saldo;
     }
 
-    public void setSaldo(int saldo) {
+    public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
 
